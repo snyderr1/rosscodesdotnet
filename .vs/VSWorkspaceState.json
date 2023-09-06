@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\app",
-    "\\pages",
+    "\\app\\pages",
     "\\public"
   ],
-  "SelectedNode": "\\pages\\Projects.tsx",
+  "SelectedNode": "\\app\\pages\\About.tsx",
   "PreviewInSolutionExplorer": false
 }
