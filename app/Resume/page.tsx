@@ -1,7 +1,7 @@
-import Home from './home/Home'
+import Resume from './Resume'
 
 export default async function start() {
     return (
-        <Home/>
+        <Resume/>
     );
 }

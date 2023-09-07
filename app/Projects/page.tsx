@@ -1,7 +1,7 @@
-import Home from './home/Home'
+import Projects from './Projects'
 
 export default async function start() {
     return (
-        <Home/>
+        <Projects/>
     );
 }
