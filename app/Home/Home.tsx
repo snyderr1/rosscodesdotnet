@@ -23,8 +23,8 @@ function Home(props: Home) {
             <div className="mt-40 animate-fadefirst">Hey. This is my website. React and Node.js.</div>
             <p className="animate-fadesecond">Check me out/Contact me:</p>
             <div className="flex flex-row mt-20 ">
-                <ImgLink className="animate-fadethird" name="git" src={"/git.png"} link="https://github.com/snyderr1/" linkText="https://github.com/snyderr1" />
-                <ImgLink className="animate-fadethird" name="email" src={"/email.png"} link="rossesny@gmail.com" linkText="rossesny@gmail.com" />
+                <ImgLink className="animate-fadethird" name="git" src={"/git.png"} link="https://github.com/snyderr1/" linkText="https://github.com/snyderr1" alt="" />
+                <ImgLink className="animate-fadethird" name="email" src={"/email.png"} link="rossesny@gmail.com" linkText="rossesny@gmail.com" alt="" />
             </div>
         </div>
     );

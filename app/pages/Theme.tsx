@@ -6,8 +6,6 @@ import React, { useState, useEffect, useRef, useLayoutEffect, Fragment } from "r
 /*import { unstable_concurrentAct } from 'react-dom/cjs/react-dom-test-utils.production.min'; */
 //import './index.css';
 import Me from '../public/me.jpg';
-import Home from '../pages/Home';
-
 import NavBar from "../NavBar";
 
 //Author: Ross Snyder
@@ -17,7 +15,7 @@ const NavigationDefault: [string, string][] = [["/Home", "Home"], ["/Resume", "R
 
 
 //the full page
-function Theme(props) {
+function Theme(props:any) {
 
     const initialState = {
         title: "Home",
@@ -26,7 +24,7 @@ function Theme(props) {
     }
 
     const [state, setState] = useState(initialState);
-    function setTitle(nTitle) {
+    function setTitle(nTitle:any) {
         const old = state;
         setState({
             title: nTitle,
@@ -38,9 +36,9 @@ function Theme(props) {
     //const now = useRef("Home");
 
     return (
-        <div class="h-screen w-screen">
+        <div className="h-screen w-screen">
             <NavBar props={NavigationDefault}></NavBar>
-            <div class="h-92 w-auto">{props.children}</div>
+            <div className="h-92 w-auto">{props.children}</div>
         </div>
     );
 }

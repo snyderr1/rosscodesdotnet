@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 //navigation bar
 
-function NavBar() {
+function NavBar(props:any) {
     
     return (
         <div className="w-full h-8 m-2 flex flex-row">

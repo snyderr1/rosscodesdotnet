@@ -3,7 +3,7 @@ import React from 'react';
 import useState from 'react';
 
 
-function Projects(props) {
+function Projects(props:any) {
     //const [projectData, setProjectData] = useState(0);
     //def is the name of the content, so that the css can be properly applied
     //for different pages and content type 
@@ -21,7 +21,7 @@ function Projects(props) {
     );
 }
 
-function GenericText(props) {
+function GenericText(props:any) {
     return (
         <div className="textBox">
             <h1 className="textBox-title">{props.title}</h1>
