@@ -16,6 +16,9 @@ module.exports = {
                 fadefirst: 'fadelinear .75s ease-in-out',
                 fadesecond: 'fadestep 1.5s ease-in-out',
                 fadethird: 'fadestep 3s ease-in-out',
+                growfast: 'growsinglestep 2s ease-in-out forwards',
+                shrinkfast: 'shrinksinglestep 2s ease-in-out forwards',
+                
             },
             keyframes: {
                 fadelinear: {
@@ -29,6 +32,19 @@ module.exports = {
                     '50%': { opacity: 0 },
                     '100%': { opacity: 1 },
 
+                },
+                grow: {
+                    '0%': { transform: 'scale(1)' },
+                    '50%': { transform: 'scale(2)'},
+                    '100%': { transform: 'scale(3)' },
+                },
+                growsinglestep: {
+                    '0%': { transform: 'scale(1)' },
+                    '100%': { transform: 'scale(2)' },
+                },
+                shrinksinglestep: {
+                    '0%': { transform: 'scale(2)' },
+                    '100%': { transform: 'scale(1)' },
                 }
             }
         },

@@ -5,16 +5,16 @@ import Link from 'next/link';
 function NavBar() {
     
     return (
-        <div class="w-full h-8 m-2 flex flex-row">
-            <Link href="https://rosscodes.net/" class="font-medium text-lg hover:underline">RossCodes.net</Link>
-            <ul class="h-full w-[1620px] flex justify-center space-x-5">
-                <li class= "hover:bg-black hover:bg-opacity-35" key="Projects">
+        <div className="w-full h-8 m-2 flex flex-row">
+            <Link href="https://rosscodes.net/" className="font-medium text-lg hover:underline">RossCodes.net</Link>
+            <ul className="h-full w-[1620px] flex justify-center space-x-5">
+                <li className= "hover:bg-black hover:bg-opacity-35" key="Projects">
                     <Link href="/Projects">{"Projects"}</Link>
                 </li>
-                <li class="hover:bg-black hover:bg-opacity-35" key="Resume">
+                <li className="hover:bg-black hover:bg-opacity-35" key="Resume">
                     <Link href="/Resume">{"Resume"}</Link>
                 </li>
-                <li class="hover:bg-black hover:bg-opacity-35" key="About">
+                <li className="hover:bg-black hover:bg-opacity-35" key="About">
                     <Link href="/About">{"About"}</Link>
                 </li>
             </ul>

@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
           <body className={inter.className}>
-              <div class="h-screen w-auto overflow-x-hidden flex bg-[url('../public/background.jpg')] bg-no-repeat bg-cover">
+              <div className="h-screen w-auto overflow-x-hidden flex bg-[url('../public/background.jpg')] bg-no-repeat bg-cover">
                   <Theme>{children}</Theme>
               </div>
           </body>
