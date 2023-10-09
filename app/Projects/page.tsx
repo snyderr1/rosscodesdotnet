@@ -1,7 +1,7 @@
-import Projects from './Projects'
+import Projects from './Projects';
 
 export default async function start() {
-    return (
-        <Projects/>
-    );
+	return (
+		<Projects/>
+	);
 }

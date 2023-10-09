@@ -5,8 +5,9 @@
     "node": true
   },
     "extends": [
-        "xo",
-        "plugin:react/recommended"
+      "xo",
+      "plugin:react/recommended",
+      "next/core-web-vitals"
     ],
     "overrides": [
         {
@@ -26,7 +27,7 @@
 
     },
     "plugins": [
-        "react"
+      "react"
     ],
     "rules": {
     }
