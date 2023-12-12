@@ -20,7 +20,7 @@ function Theme(props: any) {
 	return (
 		<div className='h-screen w-screen'>
 			<NavBar props={NavigationDefault}></NavBar>
-			<div className='h-92 w-auto'>{props.children}</div>
+			<div className='h-[92%] w-auto'>{props.children}</div>
 		</div>
 	);
 }

@@ -1,30 +1,30 @@
 'use client';
-import React from 'react';
-import useState from 'react';
+import React, {useEffect, useState} from 'react';
+import Project from './Project';
 
 function Projects(props: any) {
 	// Const [projectData, setProjectData] = useState(0);
 	// def is the name of the content, so that the css can be properly applied
 	// for different pages and content type
-	return (
-		<div className='Projects'>
-			<div className='project-container'>
-				{// {Object.entries(props.projectInfo).map((info) =>}
-				}
-				{// <GenericText key={info[0]} title={info[0]} text={info[1]} />)}}
-				}
-			</div>
-			{// <div className="Data">{this.state.ProjectData}</div>
-			}
-		</div>
-	);
-}
+	const [dbData, setDbData] = useState<Project[]>([]);
+	const [dbStatus, setDbStatus] = useState(404);
+	useEffect(() => {
+		const queryDB = async () => {
+			const response = await fetch('http://143.198.66.254', {
+				method: 'GET',
+			})
+			const data = await response.json();
+			setDbStatus(response.status);
+			setDbData(data.rows);
+		}
+		queryDB();
+	}, []);
 
-function GenericText(props: any) {
 	return (
-		<div className='textBox'>
-			<h1 className='textBox-title'>{props.title}</h1>
-			<p className='textBox-text'>{props.text}</p>
+		<div className='h-full w-full flex justify-center'>
+			{dbData.map(proj => {
+				return <Project project_number={proj.project_number} project_title={proj.project_title} project_text={proj.project_text}></Project>
+			})};
 		</div>
 	);
 }
