@@ -1,14 +1,14 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 
-interface Project {
+export type ProjectProps = {
 	project_number: number;
 	project_title: string;
 	project_text: string;
 
-}
+};
 
-function Project(props: any) {
+function Project(props: ProjectProps) {
 	// Const [projectData, setProjectData] = useState(0);
 	// def is the name of the content, so that the css can be properly applied
 	// for different pages and content type
