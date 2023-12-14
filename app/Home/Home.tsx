@@ -17,7 +17,7 @@ function Home(props: any) {
 
 	return (
 		<div className='h-auto w-auto flex flex-col items-center'>
-			<div className='mt-40 animate-fadefirst  text-white'>Hey. This is my website. React and Node.js.</div>
+			<div className='mt-5 animate-fadefirst  text-white'>Hey. This is my website. React and Node.js.</div>
 			<p className='animate-fadesecond  text-white'>Check me out/Contact me:</p>
 			<div className='flex flex-row mt-20 '>
 				<ImgLink className='animate-fadethird' name='git' src={'/git.png'} link='https://github.com/snyderr1/' linkText='https://github.com/snyderr1' alt='' />
