@@ -14,12 +14,12 @@ function Project(props: ProjectProps) {
 	// for different pages and content type
 
 	return (
-		<div className='h-full w-full flex justify-center'>
-			<div className='bg-white w-[12%] h-[25%] opacity-70 m-auto mt-5 mr-3 ml-5'>
+		<div className='h-full w-fit flex justify-center'>
+			<div className='bg-white w-fit h-fit opacity-70 mt-5 mr-3 ml-0'>
 				{props.project_number}
 				{props.project_title}
 			</div>
-			<div className='bg-white w-[33%] h-[25%] opacity-70 m-auto mt-5 ml-0 mr-5'>
+			<div className='bg-white w-fit h-fit opacity-70 mt-5 ml-0 mr-0'>
 				{props.project_text}
 			</div>
 		</div>

@@ -14,7 +14,7 @@ function Projects(props: any) {
 	const [dbStatus, setDbStatus] = useState(404);
 	useEffect(() => {
 		const queryDb = async () => {
-			const response = await fetch('http://143.198.66.254', {
+			const response = await fetch('https://rosscodesdb.rosscodesdatabase12345.cc/', {
 				method: 'GET',
 			});
 
@@ -37,7 +37,7 @@ function Projects(props: any) {
 	}, []);
 
 	return (
-		<div className='h-full w-full flex justify-center'>
+		<div className='h-full w-[800px] flex flex-col items-center '>
 			{dbData.map(proj => (
 				<Project key={proj.project_number} project_number={proj.project_number} project_title={proj.project_title} project_text={proj.project_text}/>
 			))}

@@ -15,7 +15,7 @@ function About(props: any) {
 			<p className='text-white'>I graduated from Oregon State in 2021 with a degree in Computer Science.</p>
 			<p className='text-white'>In my free time I like to write code, hike, play video games, and ski.</p>
 			<h1 className='mt-40 text-white'>(Check out this sweet trick.)</h1>
-			<div className='w-[320px] h-[180px] transition-all duration-500 ease-in-out hover:h-[360px] hover:w-[640px]'>
+			<div className='w-[320px] h-[180px] transition-all duration-500 ease-in-out hover:h-[270px] hover:w-[480px]'>
 				<ReactPlayer width='100%' height='100%' light={true} url='https://www.youtube.com/watch?v=8d1Ba01ba3w' pip={true} muted={true} />
 			</div>
 		</div>
