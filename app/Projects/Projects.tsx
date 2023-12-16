@@ -42,7 +42,7 @@ function Projects(props: any) {
 				{dbData.map(proj => (
 					<Project key={proj.project_number} project_number={proj.project_number} project_title={proj.project_title} project_text={proj.project_text}/>
 				))}
-				</div>
+			</div>
 		</div>
 	);
 }
