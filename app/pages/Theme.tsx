@@ -20,7 +20,7 @@ function Theme(props: any) {
 	return (
 		<div className='h-screen w-screen flex flex-col items-center'>
 			<NavBar props={NavigationDefault}></NavBar>
-			<div className='h-fit w-fit bg-neutral-500 bg-opacity-95 p-16'>{props.children}</div>
+			<div className='h-full w-full bg-neutral-500 bg-opacity-95 p-16'>{props.children}</div>
 		</div>
 	);
 }
