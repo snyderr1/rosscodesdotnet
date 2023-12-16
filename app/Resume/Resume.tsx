@@ -5,7 +5,7 @@ function Resume(props: any) {
 	// for different pages and content types
 	return (
 		<div className='h-full w-full flex flex-col justify-center items-center overflow-hidden'>
-			<div className='h-full w-[66%'>
+			<div className='h-full w-[66%]'>
 				<embed src='/ross_resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit' type='application/pdf' width='100%' height='100%' />
 			</div>
 		</div>
