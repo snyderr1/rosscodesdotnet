@@ -32,7 +32,7 @@ function Projects(props: any) {
 			setDbData(result);
 		})
 			.catch(err => {
-				console.log('db access failure');
+				console.log('DB API Access Error');
 			});
 	}, []);
 
