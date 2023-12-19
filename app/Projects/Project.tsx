@@ -15,11 +15,11 @@ function Project(props: ProjectProps) {
 
 	return (
 		<div className='h-full w-fit flex justify-center'>
-			<div className='bg-white w-fit h-fit opacity-70 mt-5 mr-3 ml-0'>
+			<div className='bg-neutral-400 w-fit h-fit opacity-70 mt-5 mr-3 ml-0 p-1 text-black'>
 				{props.project_number}
 				{props.project_title}
 			</div>
-			<div className='bg-white w-fit h-fit opacity-70 mt-5 ml-0 mr-0'>
+			<div className='bg-neutral-400 w-fit h-fit opacity-70 mt-5 ml-0 mr-0 p-1 text-black'>
 				{props.project_text}
 			</div>
 		</div>
