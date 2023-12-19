@@ -14,13 +14,11 @@ function Projects(props: any) {
 	const [dbStatus, setDbStatus] = useState(404);
 	useEffect(() => {
 		const queryDb = async () => {
-			const response = await fetch('https://rosscodesdb.rosscodesdatabase12345.cc/', {
+			const response = await fetch('https://rosscodes.net/db', {
 				method: 'GET',
 			});
 
 			const data = await response.json() as ProjectData;
-			setDbStatus(response.status);
-			setDbData(data.rows);
 			if (response.status === 200) {
 				return data.rows;
 			}
