@@ -10,7 +10,7 @@ type ProjectProps = {
 
 };
 
-export const queryDb = async (context: any) => {
+export const onRequest: PagesFunction<Env> = async (context: any) => {
 	const auth = btoa(`${context.env.apiuser}:${context.env.apisecret}`);
 	const response = await fetch('https://rosscodesdb.rosscodesdatabase12345.cc/', {
 		headers: {
@@ -21,9 +21,9 @@ export const queryDb = async (context: any) => {
 
 	const data = await response.json();
 	if (response.status === 200) {
-		return response;
+		return new Response('it werked');
 	}
 
-	return [];
+	return new Response('it did not :((');
 };
 
