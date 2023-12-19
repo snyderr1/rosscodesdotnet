@@ -21,10 +21,9 @@ export const onRequest: PagesFunction<Env> = async (context: any) => {
 
 	const data = await response.json();
 	if (response.status === 200) {
-		console.log('wtf is happening');
-		return new Response('it werked');
+		return new Response(JSON.stringify(data));
 	}
 
-	return new Response('it did not :((');
+	return new Response('it did not werk :((');
 };
 
