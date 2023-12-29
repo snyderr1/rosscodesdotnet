@@ -38,7 +38,7 @@ function Projects(props: any) {
 		<div className='h-full w-full flex flex-col items-center '>
 			<div className='h-full w-[800px] flex flex-col items-center '>
 				{dbData.map(proj => (
-					<Project key={proj.project_number} project_number={proj.project_number} project_title={proj.project_title} project_text={proj.project_text}/>
+					<Project key={proj.project_number} project_number={proj.project_number} project_title={proj.project_title} project_text={proj.project_text} project_url={proj.project_url} />
 				))}
 			</div>
 		</div>
