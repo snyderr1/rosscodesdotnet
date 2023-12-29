@@ -17,7 +17,7 @@ function Project(props: ProjectProps) {
 
 	return (
 		<div className='h-full w-fit flex justify-center'>
-			<div className='bg-neutral-400 w-max-[161px] h-max-[100px] opacity-70 mt-5 mr-3 ml-0 p-1 text-black'>
+			<div className='bg-neutral-400 max-w-[161px] max-h-[100px] opacity-70 mt-5 mr-3 ml-0 p-1 text-black'>
 				<Image width={0} height={0} style={{width: '100%', height: 'auto'}} layout='responsive' src={props.project_url} alt=''></Image>
 				{props.project_title}
 			</div>
