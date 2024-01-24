@@ -13,9 +13,9 @@ module.exports = {
                   'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
             animation: {
-                fadefirst: 'fadelinear .75s ease-in-out',
-                fadesecond: 'fadestep 1.5s ease-in-out',
-                fadethird: 'fadestep 3s ease-in-out',
+                fadefirst: 'fadelinear .5s ease-in-out',
+                fadesecond: 'fadestep 1s ease-in-out',
+                fadethird: 'fadestep 2s ease-in-out',
                 growfast: 'growsinglestep 2s ease-in-out forwards',
                 shrinkfast: 'shrinksinglestep 2s ease-in-out forwards',
                 
@@ -23,7 +23,7 @@ module.exports = {
             keyframes: {
                 fadelinear: {
                     '0%': { opacity: 0 },
-                    '50%': { opacity: .5 },
+                    '50%': { opacity: .66 },
                     '100%': { opacity: 1 },
 
                 },
