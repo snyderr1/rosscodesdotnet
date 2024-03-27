@@ -1,1 +1,1 @@
-this is my sick website. wow. (I have a degree.)
+Front-end for rosscodes.net.
