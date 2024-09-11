@@ -15,9 +15,6 @@ function NavBar(props: any) {
 				<li className='hover:bg-black hover:bg-opacity-10 pt-1 ' key='Resume'>
 					<Link href='/Resume'>{'Resume'}</Link>
 				</li>
-				<li className='hover:bg-black hover:bg-opacity-10 pt-1 ' key='About'>
-					<Link href='/About'>{'About'}</Link>
-				</li>
 			</ul>
 		</div>
 	);

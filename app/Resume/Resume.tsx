@@ -6,7 +6,7 @@ function Resume(props: any) {
 	return (
 		<div className='h-full w-full flex flex-col justify-center items-center overflow-hidden'>
 			<div className='h-full w-[66%]'>
-				<embed src='/ross_resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit' type='application/pdf' width='100%' height='100%' />
+				<iframe src="https://drive.google.com/file/d/1I7UDTTgt_A7j3bzfWqNtBG4tVnjZZjou/preview" width='100%' height='100%'></iframe>
 			</div>
 		</div>
 	);
