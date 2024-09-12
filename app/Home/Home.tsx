@@ -13,8 +13,9 @@ function Home(props: any) {
 			<div className='mt-5 animate-fadefirst  text-white'>Hey. This is my website. React and Node.js.Image</div>
 			<p className='animate-fadesecond  text-white'>Check me out/Contact me:</p>
 			<div className='flex flex-row mt-20 '>
-				<ImgLink className='animate-fadethird' name='git' src={'/git.png'} link='https://github.com/snyderr1/' linkText='https://github.com/snyderr1' alt='' />
+				<ImgLink className='animate-fadethird' name='git' src={'/git.png'} link='https://github.com/snyderr1/' linkText='github.com/snyderr1' alt='' />
 				<ImgLink className='animate-fadethird' name='email' src={'/email.png'} link='rossesny@gmail.com' linkText='rossesny@gmail.com' alt='' />
+				<ImgLink className='animate-fadethird' name='LinkedIn' src={'/link.png'} link='https://www.linkedin.com/in/ross-snyder-3788541a2/' linkText='linkedin.com/ross-snyder' alt='' />
 			</div>
 		</div>
 	);
