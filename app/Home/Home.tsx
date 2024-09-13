@@ -5,11 +5,9 @@ import React, {useState, useEffect, useRef, useLayoutEffect, Fragment} from 'rea
 function Home(props: any) {
 	// Def is the name of the content, so that the css can be properly applied
 	// for different pages and content types
-
-
 	return (
 		<div className='h-auto w-auto flex flex-col items-center'>
-			<Image className='object-scale-down h-40 w-50' width='200' height='310' src="https://drive.google.com/drive-viewer/AKGpihYSupqPu4m7s3HVdKVLt46Kwsmwp1xlOBD_9_m6kbqV67U8QdqryDML4T3CCSLlgiPfswBRM64L65bkZ4BFxE0yRuh0lNZoEEw=s2560" alt='' crossOrigin="anonymous"></Image>
+			<Image className='object-scale-down h-40 w-50' width='200' height='310' src='https://drive.google.com/drive-viewer/AKGpihYSupqPu4m7s3HVdKVLt46Kwsmwp1xlOBD_9_m6kbqV67U8QdqryDML4T3CCSLlgiPfswBRM64L65bkZ4BFxE0yRuh0lNZoEEw=s2560' alt='' crossOrigin='anonymous'></Image>
 			<div className='mt-5 animate-fadefirst  text-white'>Hey. This is my website. React and Node.js.Image</div>
 			<p className='animate-fadesecond  text-white'>Check me out/Contact me:</p>
 			<div className='flex flex-row mt-20 '>
