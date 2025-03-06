@@ -7,12 +7,12 @@ function Home(props: any) {
 	// for different pages and content types
 	return (
 		<div className='h-auto w-auto flex flex-col items-center'>
-			<Image className='object-scale-down h-40 w-50' width='200' height='310' src='https://drive.google.com/drive-viewer/AKGpihYSupqPu4m7s3HVdKVLt46Kwsmwp1xlOBD_9_m6kbqV67U8QdqryDML4T3CCSLlgiPfswBRM64L65bkZ4BFxE0yRuh0lNZoEEw=s2560' alt='' crossOrigin='anonymous'></Image>
+			<Image className='object-scale-down h-40 w-50' width='200' height='310' src='me.jpg' alt=''></Image>
 			<div className='mt-5 animate-fadefirst  text-white'>Hey. This is my website. React and Node.js</div>
 			<p className='animate-fadesecond  text-white'>Check me out/Contact me:</p>
 			<div className='flex flex-row mt-20 '>
 				<ImgLink className='animate-fadethird' name='git' src={'/git.png'} link='https://github.com/snyderr1/' linkText='github.com/snyderr1' alt='' />
-				<ImgLink className='animate-fadethird' name='email' src={'/email.png'} link='rossesny@gmail.com' linkText='rossesny@gmail.com' alt='' />
+				<ImgLink className='animate-fadethird' name='email' src={'/email.png'} link='mailto:rossesny@gmail.com' linkText='rossesny@gmail.com' alt='' />
 				<ImgLink className='animate-fadethird' name='LinkedIn' src={'/link.png'} link='https://www.linkedin.com/in/ross-snyder-3788541a2/' linkText='linkedin.com/ross-snyder' alt='' />
 			</div>
 		</div>
